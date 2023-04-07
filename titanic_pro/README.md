@@ -9,7 +9,7 @@ example_project/
 ├── data/
 │   ├── train.csv
 │   └── test.csv
-├── example_pipeline/
+├── titanic_pro/
 │   ├── __init__.py
 │   ├── pipeline.py
 │   ├── model.py
