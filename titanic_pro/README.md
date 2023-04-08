@@ -44,10 +44,6 @@ Install Poetry if you haven't already.
 
 Clone the repository:
 
-```console
-git clone https://github.com/your_username/titanic-survival-prediction.git
-cd titanic-survival-prediction
-```
 Install the dependencies:
 ```console
 poetry install
