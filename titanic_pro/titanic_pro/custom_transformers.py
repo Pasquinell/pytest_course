@@ -7,6 +7,6 @@ class AgeImputer(BaseEstimator, TransformerMixin):
 
     def transform(self, X):
         age_filled = X.copy()
-        age_filled['Age'].fillna(age_filled['Age'].median(), inplace=True)
+        age_filled['age'].fillna(age_filled['age'].median(), inplace=True)
         return age_filled
 

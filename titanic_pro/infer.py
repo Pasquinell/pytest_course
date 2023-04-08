@@ -15,8 +15,8 @@ def main():
     predictions = model.predict(test_df)
 
     logger.info("Saving predictions...")
-    submission = pd.DataFrame({"PassengerId": test_df["PassengerId"], "Survived": predictions})
-    submission.to_csv("submission.csv", index=False)
+    submission = pd.DataFrame({"name": test_df["name"], "survived": predictions})
+    submission.to_csv("titanic_pro/submission.csv", index=False) #  We would usually posted on a database instead
 
 if __name__ == "__main__":
     main()
