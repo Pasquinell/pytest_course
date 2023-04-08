@@ -26,6 +26,8 @@ titanic_pro/
 │   ├── notebook1.ipynb
 │   └── notebook2.ipynb
 ├── models/
+│   ├── modelv1.joblib
+│   └── modelv2.joblib
 ├── titanic_pro/
 │   ├── __init__.py
 │   ├── pipeline.py
