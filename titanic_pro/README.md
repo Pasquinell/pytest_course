@@ -84,10 +84,10 @@ This will run the test cases in the tests/ directory.
 ## Customization
 You can customize this pipeline by modifying the following components:
 
-example_pipeline/config.py: Change the feature and model configuration.
-example_pipeline/pipeline.py: Update or extend the preprocessing pipeline.
-example_pipeline/custom_transformers.py: Add new custom transformers for feature engineering.
-example_pipeline/model.py: Modify the model or optimization process.
-train.py and infer.py: Update the training and inference processes.
+- titanic_pro/config.py: Change the feature and model configuration.
+- titanic_pro/pipeline.py: Update or extend the preprocessing pipeline.
+- titanic_pro/custom_transformers.py: Add new custom transformers for feature engineering.
+- titanic_pro/model.py: Modify the model or optimization process.
+- train.py and infer.py: Update the training and inference processes.
 ## License
 This project is licensed under the MIT License.
