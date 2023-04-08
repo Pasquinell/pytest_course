@@ -1,7 +1,8 @@
 # Titanic Survival Prediction Pipeline
 This repository contains a model training and inference pipeline for predicting the survival of passengers on the Titanic using the Titanic dataset. The pipeline utilizes Scikit-learn pipelines, custom transformers, XGBoost, grid search, cross-validation, feature selection, hyperparameter optimization with Optuna, Poetry for environment and library management, logging, and pytest for testing.
 ### TO-DO
-Fix the unit tests
+- Add simple model versioning
+- Add cvs mocking
 ## Warning
 This repo was built for running in windows, so you shoulb be careful with pathing. You may want to change 
 ```python
@@ -17,10 +18,14 @@ in `infer.py`.
 The project is organized as follows:
 
 ```console
-example_project/
+titanic_pro/
 ├── data/
 │   ├── train.csv
 │   └── test.csv
+├── notebooks/
+│   ├── notebook1.ipynb
+│   └── notebook2.ipynb
+├── models/
 ├── titanic_pro/
 │   ├── __init__.py
 │   ├── pipeline.py
@@ -35,6 +40,8 @@ example_project/
 │   └── test_utils.py
 ├── train.py
 ├── infer.py
+├── .gitignore.py
+├── .coverage
 └── pyproject.toml
 ```
 ## Setup
@@ -80,6 +87,16 @@ To run the test cases, execute:
 pytest
 ```
 This will run the test cases in the tests/ directory.
+
+## Testing coverage
+For assesing the unit testing coverage run
+```console
+pytest --cov 
+```
+and then
+```console
+coverage combine
+```
 
 ## Customization
 You can customize this pipeline by modifying the following components:
