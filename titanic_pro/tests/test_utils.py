@@ -1,6 +1,7 @@
 import pytest
 from titanic_pro.utils import load_data
 
+
 def test_load_data():
     train_df, test_df = load_data()
 
