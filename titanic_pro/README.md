@@ -1,5 +1,5 @@
 # Titanic Survival Prediction Pipeline
-This repository contains a model training and inference pipeline for predicting the survival of passengers on the Titanic using the Titanic dataset. The pipeline utilizes Scikit-learn pipelines, custom transformers, XGBoost, grid search, cross-validation, feature selection, hyperparameter optimization with Optuna, Poetry for environment and library management, logging, and pytest for testing.
+This repository contains a model training and inference pipeline for predicting the survival of passengers on the Titanic using the Titanic dataset. The pipeline utilizes Scikit-learn pipelines, custom transformers, XGBoost, grid search, cross-validation, feature selection, Poetry for environment and library management, logging, pytest for testing and pytest-cov for testing coverage checking. 
 ### TO-DO
 - Add simple model versioning
 - Add cvs mocking
