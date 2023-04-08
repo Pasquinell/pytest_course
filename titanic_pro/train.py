@@ -11,12 +11,13 @@ def main():
     logger.info("Loading data...")
     train_df, _ = load_data()
     logger.info(train_df.columns.values.tolist())
-    y = train_df['survived']
-    X = train_df.drop(columns=['survived'])
-    
+    y = train_df["survived"]
+    X = train_df.drop(columns=["survived"])
 
     logger.info("Splitting data into train and validation sets...")
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_val, y_train, y_val = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
 
     logger.info("Tuning model...")
     best_params, best_score = tune_model(X_train, y_train)
@@ -32,7 +33,8 @@ def main():
     logger.info(f"Validation accuracy: {score}")
 
     logger.info("Saving the model...")
-    dump(pipeline, 'titanic_pro/model.joblib')
+    dump(pipeline, "titanic_pro/models/model.joblib")
+
 
 if __name__ == "__main__":
     main()
